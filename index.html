@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Jungle - Manuales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Fun Jungle</h1>
+
+        <!-- Formulario de ingreso de DNI -->
+        <div id="dni-section">
+            <label for="dni">Ingresa tu DNI:</label>
+            <input type="text" id="dni" placeholder="DNI" maxlength="8">
+            <button onclick="verificarDni()">Verificar</button>
+            <p id="error-message" style="color:red;"></p>
+        </div>
+
+        <!-- Sección de selección de manuales (oculta al principio) -->
+        <div id="manuales-section" style="display:none;">
+            <h2>Selecciona el manual que deseas abrir:</h2>
+            <button onclick="abrirManual('OP-MA-001')">OP-MA-001</button>
+            <button onclick="abrirManual('OP-MA-002')">OP-MA-002</button>
+            <button onclick="abrirManual('OP-MA-003')">OP-MA-003</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
